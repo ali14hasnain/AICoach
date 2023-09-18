@@ -20,18 +20,21 @@ Follow these steps to set up and use the AI Writing Coach:
     cd ai-writing-coach
 
 2. Create and activate a virtual environment (optional but recommended):
-
+```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 3. Install Dependenices 
-```pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
 
 
 4. Set up your OpenAI API key by creating a .env file in the project root directory:
- ```OPENAI_API_KEY=your_api_key_here
+```bash
+ OPENAI_API_KEY=your_api_key_here
 
 5. Run the application:
-```python app.py
+```bash
+python app.py
 
 
