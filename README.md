@@ -21,7 +21,7 @@ Follow these steps to set up and use the AI Writing Coach:
 
 2. Create and activate a virtual environment (optional but recommended):
 
-```python -m venv venv
+python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 3. Install Dependenices 
