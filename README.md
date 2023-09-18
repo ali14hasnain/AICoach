@@ -14,9 +14,11 @@
 Follow these steps to set up and use the AI Writing Coach:
 
 1. Clone this repository:
-```bash
+
+   ```bash
  git clone https://github.com/yourusername/ai-writing-coach.git
 cd ai-writing-coach
+```
 
 2. Create and activate a virtual environment (optional but recommended):
 ```bash
