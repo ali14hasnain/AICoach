@@ -1,0 +1,26 @@
+# test_processing.py
+
+import unittest
+from preprocessing import tokenize_text, clean_text, preprocess_text
+
+class TestPreprocessing(unittest.TestCase):
+
+    def test_tokenize_text(self):
+        input_text = "This is a test sentence."
+        tokens = tokenize_text(input_text)
+        self.assertEqual(tokens, ["This", "is", "a", "test", "sentence", "."])
+
+    def test_clean_text(self):
+        dirty_text = "    This is a    messy text.  "
+        cleaned_text = clean_text(dirty_text)
+        self.assertEqual(cleaned_text, "This is a messy text.")
+
+    def test_preprocess_text(self):
+        input_text = "This is a test sentence."
+        preprocessed_text = preprocess_text(input_text)
+        self.assertEqual(preprocessed_text, "this is a test sentence.")
+
+   
+
+if __name__ == '__main__':
+    unittest.main()
